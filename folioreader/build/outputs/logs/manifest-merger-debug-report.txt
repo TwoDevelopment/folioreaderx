@@ -1,25 +1,25 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
-INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
+ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
 	package
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:4:5-30
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
-		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
+		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
-		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-43:12
+		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:1-44:12
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:2:11-69
@@ -48,7 +48,7 @@ INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\Andro
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:9:5-88
 		INJECTED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml
 application
-ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:11:5-41:19
+ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:11:5-42:19
 	android:allowBackup
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:12:9-35
 	android:networkSecurityConfig
@@ -78,20 +78,22 @@ ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidM
 	android:name
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:27:13-80
 activity#com.folioreader.ui.activity.SearchActivity
-ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:30:9-39:20
+ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:30:9-40:20
 	android:launchMode
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:32:13-43
+	android:exported
+		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:33:13-36
 	android:name
 		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:31:13-70
 intent-filter#action:name:android.intent.action.SEARCH
-ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:33:13-35:29
+ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:34:13-36:29
 action#android.intent.action.SEARCH
-ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:34:17-71
+ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:35:17-71
 	android:name
-		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:34:25-68
+		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:35:25-68
 meta-data#android.app.searchable
-ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:36:13-38:54
+ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:37:13-39:54
 	android:resource
-		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:38:17-51
+		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:39:17-51
 	android:name
-		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:37:17-54
+		ADDED from D:\Github\New GitHub\folioreaderxV2\folioreaderx\folioreader\AndroidManifest.xml:38:17-54
