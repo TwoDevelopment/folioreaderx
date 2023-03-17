@@ -1286,12 +1286,10 @@ id content
 id contentPanel
 id contentView
 id coordinator
-id copySelection
 id custom
 id customPanel
 id decor_content_parent
 id default_activity_button
-id defineSelection
 id deleteHighlight
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -1424,7 +1422,6 @@ id second_separator
 id section_title
 id select_dialog_listview
 id selected
-id shareSelection
 id shortcut
 id smallLabel
 id snackbar_action

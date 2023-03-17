@@ -149,8 +149,6 @@ id buttonVertical
 id children
 id container
 id contentView
-id copySelection
-id defineSelection
 id deleteHighlight
 id edit_note
 id firstHorizontalDivider
@@ -200,7 +198,6 @@ id scrollSeekbar
 id scroller
 id second_separator
 id section_title
-id shareSelection
 id swipe_linear_layout
 id textView
 id textViewCount

@@ -73,6 +73,7 @@ import org.readium.r2.streamer.parser.EpubParser
 import org.readium.r2.streamer.parser.PubBox
 import org.readium.r2.streamer.server.Server
 import java.lang.ref.WeakReference
+import android.view.WindowManager.LayoutParams
 
 class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControllerCallback,
     View.OnSystemUiVisibilityChangeListener {
@@ -261,6 +262,8 @@ class FolioActivity : AppCompatActivity(), FolioActivityCallback, MediaControlle
 
         setConfig(savedInstanceState)
         initDistractionFreeMode(savedInstanceState)
+        getWindow().setFlags(LayoutParams.FLAG_SECURE, LayoutParams.FLAG_SECURE);
+
 
         setContentView(R.layout.folio_activity)
         this.savedInstanceState = savedInstanceState
