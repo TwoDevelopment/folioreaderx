@@ -1,17 +1,15 @@
 package com.folioreader.ui.view
+
 import android.content.Context
-import android.content.Intent
 import android.os.Handler
 import android.util.AttributeSet
 import android.util.Log
 import android.view.*
 import android.webkit.JavascriptInterface
-import androidx.core.content.ContextCompat.startActivity
 import androidx.core.view.GestureDetectorCompat
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.folioreader.R
-import com.folioreader.ui.fragment.FolioPageFragment
 
 class WebViewPager : ViewPager {
 
@@ -20,7 +18,7 @@ class WebViewPager : ViewPager {
         val LOG_TAG: String = WebViewPager::class.java.simpleName
     }
 
-    internal var horizontalPageCount: Int = 0
+    private var horizontalPageCount: Int = 0
     private var folioWebView: FolioWebView? = null
     private var takeOverScrolling: Boolean = false
     var isScrolling: Boolean = false
@@ -44,20 +42,15 @@ class WebViewPager : ViewPager {
         uiHandler = Handler()
         gestureDetector = GestureDetectorCompat(context, GestureListener())
 
-        addOnPageChangeListener(object : OnPageChangeListener {
-            override fun onPageScrolled(
-                position: Int,
-                positionOffset: Float,
-                positionOffsetPixels: Int
-            ) {
+        addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
                 // Log.d(LOG_TAG, "-> onPageScrolled -> position = " + position +
                 // ", positionOffset = " + positionOffset + ", positionOffsetPixels = " + positionOffsetPixels);
 
                 isScrolling = true
 
                 if (takeOverScrolling && folioWebView != null) {
-                    val scrollX =
-                        folioWebView!!.getScrollXPixelsForPage(position) + positionOffsetPixels
+                    val scrollX = folioWebView!!.getScrollXPixelsForPage(position) + positionOffsetPixels
                     //Log.d(LOG_TAG, "-> onPageScrolled -> scrollX = " + scrollX);
                     folioWebView!!.scrollTo(scrollX, 0)
                 }
@@ -69,24 +62,13 @@ class WebViewPager : ViewPager {
                 }
             }
 
-
             override fun onPageSelected(position: Int) {
-//
                 Log.v(LOG_TAG, "-> onPageSelected -> $position")
-//                val intent = Intent(this@WebViewPager.context,FolioPageFragment::class.java).apply {
-//                    putExtra("pageNo", position)
-//                }
-//                Log.v(LOG_TAG, "-> Position -> $position")
-//                context.startActivity(intent)
             }
 
-
-            override fun onPageScrollStateChanged(state: Int) {
-
-            }
+            override fun onPageScrollStateChanged(state: Int) {}
         })
     }
-
 
     private fun getScrollStateString(state: Int): String {
         return when (state) {
@@ -129,40 +111,30 @@ class WebViewPager : ViewPager {
 
     private inner class GestureListener : GestureDetector.SimpleOnGestureListener() {
 
-        override fun onDown(e: MotionEvent): Boolean {
+        override fun onDown(e: MotionEvent?): Boolean {
             super@WebViewPager.onTouchEvent(e)
             return true
         }
 
-        override fun onSingleTapUp(e: MotionEvent): Boolean {
+        override fun onSingleTapUp(e: MotionEvent?): Boolean {
             //Log.d(LOG_TAG, "-> onSingleTapUp");
             lastGestureType = LastGestureType.OnSingleTapUp
             return false
         }
 
-        override fun onLongPress(e: MotionEvent) {
+        override fun onLongPress(e: MotionEvent?) {
             super.onLongPress(e)
             //Log.d(LOG_TAG, "-> onLongPress -> " + e);
             lastGestureType = LastGestureType.OnLongPress
         }
 
-        override fun onScroll(
-            e1: MotionEvent,
-            e2: MotionEvent,
-            distanceX: Float,
-            distanceY: Float
-        ): Boolean {
+        override fun onScroll(e1: MotionEvent?, e2: MotionEvent?, distanceX: Float, distanceY: Float): Boolean {
             //Log.v(LOG_TAG, "-> onScroll -> e1 = " + e1 + ", e2 = " + e2 + ", distanceX = " + distanceX + ", distanceY = " + distanceY);
             lastGestureType = LastGestureType.OnScroll
             return false
         }
 
-        override fun onFling(
-            e1: MotionEvent,
-            e2: MotionEvent,
-            velocityX: Float,
-            velocityY: Float
-        ): Boolean {
+        override fun onFling(e1: MotionEvent?, e2: MotionEvent?, velocityX: Float, velocityY: Float): Boolean {
             //Log.d(LOG_TAG, "-> onFling -> e1 = " + e1 + ", e2 = " + e2 + ", velocityX = " + velocityX + ", velocityY = " + velocityY);
             lastGestureType = LastGestureType.OnFling
             return false

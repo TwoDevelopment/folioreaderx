@@ -3,20 +3,13 @@ package com.folioreader.util;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.content.res.Resources;
-import android.os.Build;
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;
-
-import com.folioreader.BuildConfig;
 import com.folioreader.Constants;
 import com.folioreader.ui.activity.FolioActivity;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 
 /**
  * Created by Mahavir on 12/15/16.
@@ -59,11 +52,8 @@ public class FileUtil {
     }
 
     public static String getFolioEpubFolderPath(String epubFileName) {
-        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.R) {
-            return Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS) + "/" + FOLIO_READER_ROOT + "/" + epubFileName;
-        }else {
-            return Environment.getExternalStorageDirectory().getAbsolutePath() + "/" + FOLIO_READER_ROOT + "/" + epubFileName;
-        }
+        return Environment.getExternalStorageDirectory().getAbsolutePath()
+                + "/" + FOLIO_READER_ROOT + "/" + epubFileName;
     }
 
     public static String getFolioEpubFilePath(FolioActivity.EpubSourceType sourceType, String epubFilePath, String epubFileName) {

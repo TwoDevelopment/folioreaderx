@@ -15,16 +15,12 @@
  */
 package com.folioreader.android.sample;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Toast;
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.folioreader.Config;
@@ -59,7 +55,6 @@ public class HomeActivity extends AppCompatActivity
                 .setReadLocatorListener(this)
                 .setOnClosedListener(this);
 
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
         getHighlightsAndSave();
 
         findViewById(R.id.btn_raw).setOnClickListener(new View.OnClickListener() {
@@ -72,7 +67,7 @@ public class HomeActivity extends AppCompatActivity
                 config.setAllowedDirection(Config.AllowedDirection.VERTICAL_AND_HORIZONTAL);
 
                 folioReader.setConfig(config, true)
-                        .openBook(R.raw.four);
+                        .openBook(R.raw.accessible_epub_3);
             }
         });
 
@@ -86,23 +81,12 @@ public class HomeActivity extends AppCompatActivity
                 if (config == null)
                     config = new Config();
                 config.setAllowedDirection(Config.AllowedDirection.VERTICAL_AND_HORIZONTAL);
-                config.setNightThemeColorInt(Color.parseColor("#FFFFFF"));
-                config.setShowRemainingIndicator(true);
-                config.setShowTextSelection(false);
 
                 folioReader.setReadLocator(readLocator);
                 folioReader.setConfig(config, true)
-                        .openBook("file:///android_asset/john.epub");
+                        .openBook("file:///android_asset/TheSilverChair.epub");
             }
         });
-
-        Config config = AppUtil.getSavedConfig(getApplicationContext());
-        if (config == null)
-            config = new Config();
-        config.setAllowedDirection(Config.AllowedDirection.VERTICAL_AND_HORIZONTAL);
-
-        folioReader.setConfig(config, true)
-                .openBook(R.raw.accessible_epub_3);
     }
 
     private ReadLocator getLastReadLocator() {
