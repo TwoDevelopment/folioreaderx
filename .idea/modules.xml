@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/folioreaderx.iml" filepath="$PROJECT_DIR$/.idea/folioreaderx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.iml" filepath="$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.main.iml" filepath="$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/folioreader/folioreaderx.folioreader.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/sample/folioreaderx.sample.unitTest.iml" />
+    </modules>
+  </component>
+</project>
